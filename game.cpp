@@ -5,11 +5,11 @@
 int main(){
     Color darkgreen = Color{20,160,133,200};
 
-    const int screenwidth = 750;
+    const int screenwidth = 1200;
 
-    const int screenhight = 750;
+    const int screenhight = 800;
     int FPS = 12;
-    const int CELL_SIZE = 25 ;
+    const int CELL_SIZE = 4 ;
    
     InitWindow(screenwidth,screenhight,"Game of life");
     SetTargetFPS(FPS);
