@@ -7,6 +7,11 @@ class Grid{
            :rows(height/cellSize), columns(width/cellSize), cellSize(cellSize),cells(rows, std::vector<int>(columns,0)){};
        void Draw();
        void SetValue(int row, int column, int value);
+       int Getvalue(int row , int column);
+       bool IsWithinBounds(int row  , int column);
+       int Getrows(){return rows;}
+       int Getcolumns(){return columns;}
+       void FillRandom();
     private:
        int rows;
        int columns;
