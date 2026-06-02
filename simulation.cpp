@@ -40,6 +40,7 @@ int Simulation::CountLiveNieghbors(int row, int column)
 
 void Simulation::Update()
 {
+ if(IsRunning()){
     for(int row = 0 ; row < grid.Getrows(); row++)
     {
         for(int column = 0 ; column < grid.Getcolumns(); column++)
@@ -67,6 +68,7 @@ void Simulation::Update()
     }
 
     grid = tempGrid;
+ }
 
 }
 
